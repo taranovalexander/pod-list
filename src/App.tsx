@@ -36,7 +36,7 @@ function App () {
   return (
     <Layout>
       <h1 className="text-center text-3xl font-bold mb-10">Clusters</h1>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
         {
           Object.entries(clusters).map(([clusterName, pods]: [string, Pod[]]) => pods.length ? (
             <Cluster key={clusterName} name={clusterName} pods={pods} />

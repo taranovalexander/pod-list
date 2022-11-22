@@ -15,7 +15,6 @@ export const PodItem: React.FC<Props> = ({ data }) => {
   function onButtonClick(uid: string) {
     replacePods(uid);
   }
-  console.log(meta.isLoading);
   return (
     <div className="border rounded-md p-2 bg-neutral-50	relative">
       <div className={rowClassNames}><span className={labelClassNames}>uid:</span>{data.uid}</div>
