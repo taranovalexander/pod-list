@@ -21,9 +21,9 @@ export const podsApi = createApi({
       // TODO: uncomment this line to enable refetching data when api is available
       // invalidatesTags: ["Pod"],
 
-      // TODO: the code below is using only while we mock api
-      // in case of using rtk query with real api the data will be automatically refetched
-      // unce we update a pod
+      // TODO: the code below is only used when we are mocking the API,
+      // in case of using rtk query with real API, the data will be
+      // automatically updated after the pod is updated.
       async onQueryStarted(uid, { dispatch, queryFulfilled }) {
         try {
           const { data: { initializing, terminating} } = await queryFulfilled;

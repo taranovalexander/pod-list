@@ -29,7 +29,7 @@ function App () {
       selectFromResult: result => ({
         clusters: sortPodsByCluster(result)
       }),
-      // TODO: Enable poling when api is available
+      // TODO: Enable polling when api is available
       // pollingInterval: 10000,
     }
   );
