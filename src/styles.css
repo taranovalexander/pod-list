@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer theme {
+  .theme-text-default {
+    @apply text-gray-700;
+  }
+  .theme-text-secondary {
+    @apply text-gray-400;
+  }
+  .theme-fill-primary {
+    @apply fill-green-500;
+  }
+  .theme-text-primary {
+    @apply text-green-500;
+  }
+}
