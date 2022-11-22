@@ -67,6 +67,7 @@ function setupWorkers(): void {
   worker.start();
 }
 
+// enable service worker only in develop mode and if mocking is enabled
 if (process.env.NODE_ENV !== "production" && Object.values(ENABLE_MOCKS).find(v => v)) {
   setupWorkers();
 }
